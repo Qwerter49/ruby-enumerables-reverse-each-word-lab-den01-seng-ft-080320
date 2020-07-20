@@ -1,11 +1,11 @@
 require 'pry'
 def reverse_each_word(string)
+  new_array = []
   array = string.split(" ")
-  array.map do |word|
-    word.reverse
-    
+  array.each do |word|
+    new_array = word.reverse
   end
-  array.join(" ")
+
 
 
 end
